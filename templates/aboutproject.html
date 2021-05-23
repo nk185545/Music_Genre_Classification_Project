@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <style>
+        #mainimg{
+          top: 10;
+          left: 0;
+          width:1150px;
+          height:300px;
+        }
+        #mainDiv{
+            margin:30px 50px 30px 50px;
+
+        }
+        .musicimg{
+          max-height:300px;
+        }
+
+     </style>
+    {% include 'partials/_headerlinks.html' %}
+</head>
+<body style="background-color:lightgray;">
+{% load static %}
+{% include 'partials/_navbar.html' %}
+<div id="mainDiv">
+    <div>
+        <center><h3><u><font color="black" >Python Based Project – Music Genre Cassification</font></u></h3></center>
+    </div>
+        {% load static %}
+    <div>
+        <center>
+            <img src="{% static 'images/2.jpg' %}" id="mainimg" alt="My image"/>
+        </center>
+    </div>
+    <br><br>
+
+    <div>
+        <p><font size="5" color="black">Music Generation Classification</font> : This project is about to classify the music genre (Type). Artificial Neural Network is used to train the model.</p>
+    </div>
+
+    <div>
+        <p><font size="5" color="black">Libraries Used</font> : Numpy, OS, Librosa, Tensorflow</p>
+        <p><b>==> Numpy</b> is used for array manipuations. <b>OS</b> is used to play with directories. <b>Librosa</b> is used for reading, manipulating and feature extracting the audio files. <b>Tensorflow (Keras)</b> used for building the neural network and training the model. </p>
+    </div>
+
+    <div>
+        <p><font size="5" color="black">Dataset Link</font> : <a href="https://www.kaggle.com/andradaolteanu/gtzan-dataset-music-genre-classification" target="_blank">https://www.kaggle.com/andradaolteanu/gtzan-dataset-music-genre-classification</a></p>
+    </div>
+    <div>
+       <b> Some Glimpses of Our Predictor :-</b>
+    </div>
+    <div class="container">
+            <div class="row">
+                <div class="col-sm-6  musicdiv" >
+                    <img src="{% static 'images/output1.png' %}" class="musicimg" alt="My image"/> <br><br>
+                </div>
+                <br><br><br>
+                <div class="col-sm-6  musicdiv" >
+                    <img src="{% static 'images/output2.png' %}" class="musicimg" alt="My image"/> <br><br>
+                </div>
+            </div>
+    </div>
+</div>
+</body>
+</html>

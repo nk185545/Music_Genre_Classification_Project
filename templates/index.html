@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <style>
+         #mainimg{
+          top: 10;
+          left: 0;
+          opacity:0.9;
+          width:1150px;
+          height:300px;
+        }
+        #mainDiv{
+            margin:30px 50px 30px 50px;
+
+        }
+        .musicdiv{
+            border-style: groove;
+            border-radius:20px;
+            text-align: center;
+            height:350px;
+        }
+        .musicimg{
+          max-height:200px;
+        }
+
+     </style>
+    {% include 'partials/_headerlinks.html' %}
+</head>
+<body style="background-color:lightgray;">
+{% load static %}
+{% include 'partials/_navbar.html' %}
+<div id="mainDiv">
+    <div>
+        <center><h3><u><font color="black" >Python Based Project – Music Genre Classification</font></u></h3></center>
+    </div>
+        {% load static %}
+    <div>
+        <center>
+            <img src="{% static 'images/music1.jpg' %}" id="mainimg" alt="My image"/>
+        </center>
+    </div>
+    <br><br>
+
+     <div>
+        <center><h3><u><font color="black" >Music Classes Samples List</font></u></h3></center>
+    </div>
+
+    <br>
+
+    <div class="container">
+            <div class="row">
+                <div class="col-sm-6  musicdiv" >
+                    <h5 class="card-title">Blues</h5>
+                    <img src="{% static 'images/music_genre/blues/blues00000.png' %}" class="musicimg" alt="My image"/> <br><br>
+                    <audio controls><source src="{% static 'images/music_genre/blues/blues.00000.wav' %}" type="audio/mpeg"></audio>
+                </div>
+                <br><br><br>
+                <div class="col-sm-6  musicdiv" >
+                    <h5 class="card-title">Classical</h5>
+                    <img src="{% static 'images/music_genre/classical/classical00000.png' %}" class="musicimg" alt="My image"/> <br><br>
+                    <audio controls><source src="{% static 'images/music_genre/classical/classical.00000.wav' %}" type="audio/mpeg"></audio>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-6  musicdiv">
+                    <h5 class="card-title">Country</h5>
+                    <img src="{% static 'images/music_genre/country/country00000.png' %}" class="musicimg" alt="My image"/> <br><br>
+                    <audio controls><source src="{% static 'images/music_genre/country/country.00000.wav' %}" type="audio/mpeg"></audio>
+                </div>
+                <div class="col-sm-6  musicdiv">
+                    <h5 class="card-title">Disco</h5>
+                    <img src="{% static 'images/music_genre/disco/disco00000.png' %}" class="musicimg" alt="My image"/> <br><br>
+                    <audio controls><source src="{% static 'images/music_genre/disco/disco.00000.wav' %}" type="audio/mpeg"></audio>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-6  musicdiv">
+                    <h5 class="card-title">Hiphop</h5>
+                    <img src="{% static 'images/music_genre/hiphop/hiphop00000.png' %}" class="musicimg" alt="My image"/> <br><br>
+                    <audio controls><source src="{% static 'images/music_genre/hiphop/hiphop.00000.wav' %}" type="audio/mpeg"></audio>
+                </div>
+                <div class="col-sm-6  musicdiv">
+                    <h5 class="card-title">Jazz</h5>
+                    <img src="{% static 'images/music_genre/jazz/jazz00000.png' %}" class="musicimg" alt="My image"/> <br><br>
+                    <audio controls><source src="{% static 'images/music_genre/jazz/jazz.00000.wav' %}" type="audio/mpeg"></audio>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-6  musicdiv">
+                    <h5 class="card-title">Metal</h5>
+                    <img src="{% static 'images/music_genre/metal/metal00000.png' %}" class="musicimg" alt="My image"/> <br><br>
+                    <audio controls><source src="{% static 'images/music_genre/metal/metal.00000.wav' %}" type="audio/mpeg"></audio>
+                </div>
+                <div class="col-sm-6  musicdiv">
+                    <h5 class="card-title">Pop</h5>
+                    <img src="{% static 'images/music_genre/pop/pop00000.png' %}" class="musicimg" alt="My image"/> <br><br>
+                    <audio controls><source src="{% static 'images/music_genre/pop/pop.00000.wav' %}" type="audio/mpeg"></audio>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-6  musicdiv">
+                    <h5 class="card-title">Raggae</h5>
+                    <img src="{% static 'images/music_genre/reggae/reggae00000.png' %}" class="musicimg" alt="My image"/> <br><br>
+                    <audio controls><source src="{% static 'images/music_genre/reggae/reggae.00000.wav' %}" type="audio/mpeg"></audio>
+                </div>
+                <div class="col-sm-6  musicdiv">
+                    <h5 class="card-title">Rock</h5>
+                    <img src="{% static 'images/music_genre/rock/rock00000.png' %}" class="musicimg" alt="My image"/> <br><br>
+                    <audio controls><source src="{% static 'images/music_genre/rock/rock.00000.wav' %}" type="audio/mpeg"></audio>
+                </div>
+            </div>
+
+    </div>
+
+</div>
+</body>
+</html>
